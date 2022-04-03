@@ -1,0 +1,100 @@
+@media (max-width: 1200px)
+    .container
+        padding: 0 40px
+    .feedback
+        .slick-prev
+            left: -30px
+        .slick-next
+            right: -30px
+
+@media (max-width: 992px)
+    .main
+        margin-top: -35px
+    .problem
+        &__question
+            &::after
+                right: -20%
+    .experience
+        &__img
+            display: none
+        &__content
+            padding-bottom: 20px
+
+    .feedback
+        &__slider
+            padding: 0 40px
+    .feedback
+        .slick-prev
+            left: 0px
+        .slick-next
+            right: 0px
+
+@media (max-width: 767px)
+    .container
+        padding: 0 20px
+    .main
+        margin-top: -25px
+    .team
+        .slick-next
+            right: 10px
+    .problem
+        &__content
+            grid-template: auto/ auto
+            gap: 90px
+        &__question
+            &-descr
+                padding-left: 0
+            &::after
+                top: 120%
+                left: 50%
+                transform: translateX(-50%) rotate(90deg)
+        &__solve
+            display: flex
+            flex-direction: column
+            align-items: center
+    .experience
+        &__content
+            gap: 50px
+            justify-content: center
+        &__info
+            &-title
+                margin-left: 0
+            &-name
+                margin: 0
+    .feedback
+        &__wrapper
+            grid-template: auto / 100%
+            gap: 50px
+        &__slider
+            width: 100%
+    .work
+        &__wrapper
+            grid-template: auto/repeat(2,45%)
+    .contacts
+        &__list
+            flex-direction: column
+            align-items: center
+            &-item
+                margin-bottom: 20px
+                &:last-child
+                    margin-bottom: 0
+
+@media (max-width: 595px)
+    .main
+        margin-top: -20px
+    .title
+        font-size: 40px
+    .work
+        &__wrapper
+            grid-template: auto/auto
+    .experience
+        &__content
+            grid-template: auto/auto
+    .problem
+        padding-top: 0px
+    .menu
+        &__item
+            &:first-child
+                width: 100px
+            &:nth-child(2)
+                display: none

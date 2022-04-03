@@ -1,0 +1,42 @@
+.team
+    padding-top: 40px
+    &__title
+        font-size: 24px
+        margin-top: 30px
+        text-align: center
+    &__slider
+        margin-top: 45px
+        position: relative
+    &__member
+        img
+            width: 205px
+            background: #EBEBEB
+            border-radius: 6px
+            height: 265px
+            object-fit: cover
+        &-name
+            margin-top: 15px
+            font-weight: 500
+            font-size: 12px
+            padding-left: 5px
+        &-director
+            padding-left: 5px
+            margin-top: 15px
+            font-size: 20px
+            line-height: 150%
+            display: flex
+            flex-direction: column
+            span
+                font-size: 12px
+    .slick-next
+        position: absolute
+        background: url("../icons/arrow-orange.svg") center center no-repeat
+        right: -30px
+        top: 50%
+        transform: translateY(-50%)
+        width: 30px
+        height: 30px
+        border: none
+        cursor: pointer
+    .slick-prev
+        display: none
